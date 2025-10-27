@@ -1,20 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginPage</title>
-    <meta http-equiv="refresh" content="2;url=login.html">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/loading_style.css">
+    <title>Site Demo - Render</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        .emoji {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .steps {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .steps h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .step {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .step::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+            margin-top: 20px;
+        }
+        
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="loading-container">
-        <img src="../MEDIA/logo.png" alt="" class="logo">
-        <div class="loader"></div>
+    <div class="container">
+        <div class="emoji">🚀</div>
+        <h1>Bine ai venit!</h1>
+        <p>Acesta este un site demo deploiat pe Render. Este simplu, rapid și gratuit!</p>
+        
+        <div class="steps">
+            <h2>Cum să deploy-ezi acest site:</h2>
+            <div class="step">Creează un repository pe GitHub</div>
+            <div class="step">Adaugă fișierul index.html</div>
+            <div class="step">Conectează Render cu GitHub</div>
+            <div class="step">Selectează "Static Site"</div>
+            <div class="step">Site-ul tău e live! 🎉</div>
+        </div>
+        
+        <a href="https://render.com" class="button" target="_blank">Încearcă Render</a>
+        
+        <div class="footer">
+            Creat cu ❤️ pentru deployment pe Render
+        </div>
     </div>
 </body>
-
 </html>
